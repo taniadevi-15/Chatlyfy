@@ -34,10 +34,9 @@ Chatlyfy is a real-time chat app built with the MERN stack and Socket.io. It all
 
   ## 📧 Contact
 
-- **Author:** Nekal Singh Salaria
-- **Email:** [nekalsingh987@gmail.com](mailto:nekalsingh987@gmail.com)
-- **LinkedIn:** [linkedin.com/in/nekalsingh](https://www.linkedin.com/in/nekalsingh)
-- **GitHub:** [github.com/nekalsalaria](https://github.com/nekalsalaria/nekalsalaria)
+- **Author:** Tania Devi
+- **LinkedIn:** [linkedin.com/in/taniadevi](https://www.linkedin.com/in/tania-devi-5b95772aa/)
+- **GitHub:** [github.com/taniadevi](https://github.com/taniadevi-15)
 
 ---
 
