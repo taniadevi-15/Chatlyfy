@@ -13,27 +13,27 @@ dotenv.config()
 const port = process.env.PORT || 5000
 
 // ✅ Allow multiple origins
-// const allowedOrigins = [
-//   "http://localhost:5173",
-//   // "https://chatlyfy.onrender.com"
-// ];
+const allowedOrigins = [
+  "http://localhost:5173",
+   "https://chatlyfy-1.onrender.com"
+];
 
-
-app.use(cors({
-  origin: "http://localhost:5173", // your React frontend
-  credentials: true               // ALLOW cookies
-}));
 
 // app.use(cors({
-//   origin: function (origin, callback) {
-//     if (!origin || allowedOrigins.includes(origin)) {
-//       callback(null, true);
-//     } else {
-//       callback(new Error("Not allowed by CORS"));
-//     }
-//   },
-//   credentials: true
+//   origin: "http://localhost:5173", // your React frontend
+//   credentials: true               // ALLOW cookies
 // }));
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true
+}));
 
 
 app.use(express.json());
