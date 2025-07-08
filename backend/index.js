@@ -12,14 +12,10 @@ dotenv.config()
 
 const port = process.env.PORT || 5000
 
-// ✅ Allow multiple origins
-
 const allowedOrigins = [
   "http://localhost:5173",
-   "https://chatlyfy-webapp.onrender.com"
-  //  credentials: true
+  "https://chatlyfy-webapp.onrender.com"
 ];
-
 
 app.use(cors({
   origin: function (origin, callback) {
