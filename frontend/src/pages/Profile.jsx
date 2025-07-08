@@ -36,7 +36,7 @@ function Profile() {
       }
 
       let result= await axios.put(`${serverUrl}/api/user/profile`,formData,{withCredentials:true})
-       setSaving(false)
+      //  setSaving(false)
 
       dispatch(setUserData(result.data))
       navigate('/')

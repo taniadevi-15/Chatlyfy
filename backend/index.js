@@ -13,16 +13,13 @@ dotenv.config()
 const port = process.env.PORT || 5000
 
 // ✅ Allow multiple origins
+
 const allowedOrigins = [
   "http://localhost:5173",
-   "https://chatlyfy-1.onrender.com"
+   "https://chatlyfy-1.onrender.com",
+  //  credentials: true
 ];
 
-
-// app.use(cors({
-//   origin: "http://localhost:5173", // your React frontend
-//   credentials: true               // ALLOW cookies
-// }));
 
 app.use(cors({
   origin: function (origin, callback) {
@@ -46,4 +43,5 @@ app.use('/api/message', messageRouter);
 server.listen(port, () => {
   connectDb();
   console.log('Server is running');
+  // console.log(port)
 });
